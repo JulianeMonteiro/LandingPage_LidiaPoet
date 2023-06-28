@@ -1,5 +1,22 @@
-$bgColor: yellow;
+@use "variables";
+@use "hero";
+@use "sinopse";
+@use "characters";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "News Cycle", sans-serif;
+}
 
 body {
-  background-color: $bgColor;
+  background-color: variables.$bgColor;
+  box-shadow: -15px 6px 115px 200px rgba(0, 0, 0, 1);
+  position: absolute;
+  overflow-x: hidden;
+
+  .hero {
+    box-shadow: inset 1px -118px 46px -5px rgba(0, 0, 0, 0.75);
+  }
 }
