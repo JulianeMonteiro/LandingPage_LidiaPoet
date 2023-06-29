@@ -9,7 +9,7 @@
     color: variables.$textColorPrimary;
     font-size: 1.6em;
     letter-spacing: 0.1em;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     padding-top: 40px;
     border-top: variables.$colorBtn 3px solid;
   }
@@ -21,7 +21,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 100px 50px;
-    padding: 50px 50px 100px;
+    padding: 0 50px 100px;
     display: grid;
     grid-template-columns: repeat(3, 24%);
 

@@ -17,19 +17,23 @@
       <div class="header__container">
         <h1>
           <img
-            class="header__logo"
+            class="header__container__logo"
             src="/src/images/netflix.logo.png"
             alt="Netflix"
           />
         </h1>
         <ul class="header__links">
           <li class="header__links__item">
-            <a
-              href="https://www.netflix.com/br/title/81414644#:~:text=Nesta%20s%C3%A9rie%20inspirada%20na%20hist%C3%B3ria,luta%20pelo%20direito%20de%20advogar.&text=Assista%20o%20quanto%20quiser.&text=Protagonizada%20pela%20premiada%20Matilda%20De,Hist%C3%B3ria%20da%20Ilha%20das%20Rosas."
-              target="_blank"
-              class="button button--secondary"
-              >Assistir agora</a
-            >
+            <a href="#home" target="_blank">Home</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#sinopse" target="_blank">Sinopse</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#elenco" target="_blank">Elenco</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#episode" target="_blank">Episódios</a>
           </li>
         </ul>
       </div>
@@ -72,7 +76,7 @@
         <figcaption class="quote__author">- Lidia Poët</figcaption>
       </figure>
     </section>
-    <section class="sinopse">
+    <section class="sinopse" id="sinopse">
       <div class="sinopse__text">
         <h3>SINOPSE</h3>
         <p>
@@ -90,7 +94,7 @@
         </p>
       </div>
     </section>
-    <section class="characters">
+    <section class="characters" id="elenco">
       <h3 class="characters__title">ELENCO</h3>
       <div class="container">
         <div class="card card0">
@@ -134,7 +138,7 @@
       </div>
     </section>
     <section class="episodes">
-      <h3>EPISÓDIOS</h3>
+      <h3>TEMPORADA 1</h3>
       <div class="container">
         <div class="episode" style="--clr: #6c5273">
           <div class="img-box">
@@ -154,7 +158,7 @@
             >
           </div>
         </div>
-        <div class="episode" style="--clr: #6c5273">
+        <div class="episode" id="episode" style="--clr: #6c5273">
           <div class="img-box">
             <img src="/src/images/ep2.jpg" />
           </div>
