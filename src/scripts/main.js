@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll("[data-tab-button]");
-
   const heroSection = document.querySelector(".hero");
   const alturaHero = heroSection.clientHeight;
 
