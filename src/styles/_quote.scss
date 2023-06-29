@@ -1,0 +1,126 @@
+@use "variables";
+
+.quote-lidia {
+  display: grid;
+  position: relative;
+  background: variables.$bgColor;
+  margin: 0;
+  overflow: hidden;
+  height: 60vh;
+  align-items: center;
+
+  .quote {
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    max-width: 700px;
+    background-color: #b6b0b0;
+    line-height: 1.5;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    box-shadow: 0px 0px 12px 4px #d5cdbacf;
+    color: #444;
+
+    &__text {
+      font-size: 28px;
+      margin: 0;
+      padding: 1rem 0;
+      margin: 0 1rem;
+      max-width: 700px;
+      line-height: 1.5;
+      margin: 0 40px;
+      font-weight: bold;
+      font-family: "Special Elite", cursive;
+
+      span {
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+        font-family: "Special Elite", cursive;
+
+        &:nth-child(2) {
+          animation-delay: 0.5s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: 1s;
+        }
+
+        &:nth-child(4) {
+          animation-delay: 1.25s;
+        }
+
+        &:nth-child(5) {
+          animation-delay: 1.5s;
+        }
+
+        &:nth-child(6) {
+          animation-delay: 1.75s;
+        }
+
+        &:nth-child(7) {
+          animation-delay: 2s;
+        }
+
+        &:nth-child(8) {
+          animation-delay: 2.25s;
+        }
+
+        &:nth-child(9) {
+          animation-delay: 2.5s;
+        }
+
+        &:nth-child(10) {
+          animation-delay: 2.75s;
+        }
+
+        &:nth-child(11) {
+          animation-delay: 3s;
+        }
+
+        &:nth-child(12) {
+          animation-delay: 3.25s;
+        }
+
+        &:nth-child(13) {
+          animation-delay: 3.5s;
+        }
+      }
+    }
+
+    &__overlay {
+      position: absolute;
+      top: 32px;
+      left: 0;
+      margin: 0 40px;
+      opacity: 0.35;
+      font-size: 28px;
+      -webkit-text-stroke: 1px #17171777;
+      color: transparent;
+      font-family: "Special Elite", cursive;
+    }
+
+    &__author {
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+      animation-delay: 4s;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote p {
+    font-size: 30px;
+  }
+}

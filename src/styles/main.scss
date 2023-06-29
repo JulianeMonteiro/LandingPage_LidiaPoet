@@ -1,9 +1,11 @@
 @use "variables";
+@use "header";
 @use "hero";
 @use "sinopse";
 @use "characters";
 @use "episodes";
-@use "channel";
+@use "quote";
+@use "footer";
 
 * {
   margin: 0;

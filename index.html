@@ -7,12 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=News+Cycle&family=Special+Elite&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=News+Cycle&family=Special+Elite&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="dist/css/main.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="/src/images/netflix.logo.png"
+            alt="Netflix"
+          />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a
+              href="https://www.netflix.com/br/title/81414644#:~:text=Nesta%20s%C3%A9rie%20inspirada%20na%20hist%C3%B3ria,luta%20pelo%20direito%20de%20advogar.&text=Assista%20o%20quanto%20quiser.&text=Protagonizada%20pela%20premiada%20Matilda%20De,Hist%C3%B3ria%20da%20Ilha%20das%20Rosas."
+              target="_blank"
+              class="button button--secondary"
+              >Assistir agora</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
     <section class="hero">
       <div class="hero__title">
         <h1 class="hero__title__image">
@@ -32,6 +53,24 @@
           ><button>Assistir Trailer</button></a
         >
       </div>
+    </section>
+    <section class="quote-lidia">
+      <figure class="quote">
+        <blockquote>
+          <p class="quote__overlay">
+            “Haverá um tempo em que essas disputas pela dignidade das mulheres
+            soarão grotescas”
+          </p>
+          <p class="quote__text">
+            <span>“Haverá</span> <span>um</span> <span>tempo</span>
+            <span>em</span> <span>que</span> <span>essas</span>
+            <span>disputas</span> <span>pela</span> <span>dignidade</span>
+            <span>das</span> <span>mulheres</span> <span>soarão</span>
+            <span>grotescas”</span>
+          </p>
+        </blockquote>
+        <figcaption class="quote__author">- Lidia Poët</figcaption>
+      </figure>
     </section>
     <section class="sinopse">
       <div class="sinopse__text">
@@ -207,6 +246,13 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <p>Página desenvolvida com carinho por Juliane Monteiro "</p>
+      <img src="/src/images/heart.png" alt="coração" />
+      <p>"</p>
+    </footer>
+
     <script src="./dist/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,20 @@
+@use "variables";
+
+footer {
+  border-top: 2px solid variables.$textColorSecondary;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  p {
+    color: variables.$textColorSecondary;
+    font-family: "Special Elite", cursive;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
