@@ -2,6 +2,8 @@
 @use "hero";
 @use "sinopse";
 @use "characters";
+@use "episodes";
+@use "channel";
 
 * {
   margin: 0;
@@ -13,7 +15,6 @@
 body {
   background-color: variables.$bgColor;
   box-shadow: -15px 6px 115px 200px rgba(0, 0, 0, 1);
-  position: absolute;
   overflow-x: hidden;
 
   .hero {

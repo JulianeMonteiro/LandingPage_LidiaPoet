@@ -4,7 +4,7 @@
   height: 90vh;
 
   &__text {
-    margin: 120px auto;
+    margin: 100px auto 0;
     color: variables.$textColorSecondary;
     max-width: 70%;
     line-height: 1.8em;
@@ -12,8 +12,8 @@
     letter-spacing: 0.1em;
 
     h3 {
-      margin-bottom: 36px;
-      padding-top: 20px;
+      padding-bottom: 100px;
+      padding-top: 40px;
       border-top: variables.$colorBtn 3px solid;
     }
   }

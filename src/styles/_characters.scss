@@ -1,0 +1,177 @@
+@use "variables";
+
+.characters {
+  margin-bottom: 150px;
+
+  &__title {
+    width: 70vw;
+    margin: 0 auto;
+    color: variables.$textColorPrimary;
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 70vw;
+    max-height: 70vh;
+    min-width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .border {
+    height: 230px;
+    width: 210px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+
+    &:hover {
+      border: 1px solid variables.$textWhiteColor;
+    }
+
+    .text-min {
+      margin-top: 125px;
+    }
+  }
+
+  h2,
+  p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: variables.$textWhiteColor;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 100px;
+    padding: 5px 1px;
+    background-color: transparent;
+  }
+
+  h3 {
+    color: variables.$textColorPrimary;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    border-top: variables.$colorBtn 3px solid;
+  }
+}
+.card {
+  height: 250px;
+  width: 220px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px variables.$bgColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  filter: grayscale(70%);
+}
+.card0 {
+  background: url("/src/images/lidia_poet.png") center center no-repeat;
+  background-size: 250px;
+
+  &:hover {
+    background: url("/src/images/lidia_poet.png") left center no-repeat;
+    background-size: 350px;
+
+    filter: grayscale(0);
+
+    h2,
+    p {
+      opacity: 1;
+    }
+  }
+}
+.card1 {
+  background: url("/src/images/jacopo_barberis.png") center center no-repeat;
+  background-size: 250px;
+
+  &:hover {
+    background: url("/src/images/jacopo_barberis.png") left center no-repeat;
+    background-size: 350px;
+
+    filter: grayscale(0);
+
+    h2,
+    p {
+      opacity: 1;
+    }
+  }
+}
+.card2 {
+  background: url("/src/images/andrea_caracciolo.png") center center no-repeat;
+  background-size: 250px;
+
+  &:hover {
+    background: url("/src/images/andrea_caracciolo.png") left center no-repeat;
+    background-size: 350px;
+
+    filter: grayscale(0);
+
+    h2,
+    p {
+      opacity: 1;
+    }
+  }
+}
+
+.card3 {
+  background: url("/src/images/enrico_poet.png") center center no-repeat;
+  background-size: 250px;
+
+  &:hover {
+    background: url("/src/images/enrico_poet.png") left center no-repeat;
+    background-size: 350px;
+
+    filter: grayscale(0);
+
+    h2,
+    p {
+      opacity: 1;
+    }
+  }
+}
+
+.card4 {
+  background: url("/src/images/marianna_poet.png") center center no-repeat;
+  background-size: 250px;
+
+  &:hover {
+    background: url("/src/images/marianna_poet.png") left center no-repeat;
+    background-size: 350px;
+
+    filter: grayscale(0);
+
+    h2,
+    p {
+      opacity: 1;
+    }
+  }
+}
+
+.card5 {
+  background: url("/src/images/teresa_barberis.png") center center no-repeat;
+  background-size: 250px;
+
+  &:hover {
+    background: url("/src/images/teresa_barberis.png") left center no-repeat;
+    background-size: 350px;
+
+    filter: grayscale(0);
+
+    h2,
+    p {
+      opacity: 1;
+    }
+  }
+}
