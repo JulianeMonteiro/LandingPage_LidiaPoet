@@ -1,7 +1,7 @@
 @use "variables";
 
 .hero {
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   background-image: url(../images/bg_lidia_poet.png);
   text-align: left;
@@ -10,7 +10,7 @@
   background-position: top right;
 
   @media (max-width: 2500px) {
-    height: 80vh;
+    height: 70vh;
   }
 
   &__title {
@@ -99,7 +99,7 @@
 
       @media (max-width: 1500px) {
         line-height: 1.2em;
-        font-size: 1.3em;
+        font-size: 1.2em;
       }
 
       @media (max-width: 1300px) {
