@@ -19,7 +19,8 @@
     width: 70vw;
     max-height: 70vh;
     min-width: 80vw;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
@@ -348,4 +349,134 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 428px) and (max-width: 600px) {
+  .characters {
+    margin-bottom: 80px;
+    height: 105vh;
+
+    &__title {
+      font-size: 1em;
+      padding-bottom: 50px;
+    }
+
+    .container {
+      grid-template-columns: repeat(2, 40%);
+      column-gap: 10%;
+    }
+
+    .border {
+      height: 145px;
+      width: 130px;
+
+      .text-min {
+        margin-top: 65px;
+      }
+    }
+
+    h2,
+    p {
+      margin: 10px;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 0.9em;
+      margin-top: 55px;
+    }
+  }
+  .card {
+    height: 155px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .characters {
+    margin-bottom: 80px;
+    height: 105vh;
+
+    &__title {
+      font-size: 1em;
+      padding-bottom: 50px;
+    }
+
+    .container {
+      grid-template-columns: repeat(2, 40%);
+      column-gap: 10%;
+    }
+
+    .border {
+      height: 145px;
+      width: 130px;
+
+      .text-min {
+        margin-top: 65px;
+      }
+    }
+
+    h2,
+    p {
+      margin: 10px;
+    }
+
+    h2 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 0.9em;
+      margin-top: 55px;
+    }
+  }
+  .card {
+    height: 155px;
+    width: 100%;
+  }
+  .card0 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+  .card1 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+  .card2 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+
+  .card3 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+
+  .card4 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+
+  .card5 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
 }

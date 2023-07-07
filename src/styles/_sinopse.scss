@@ -69,4 +69,39 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 428px) and (max-width: 600px) {
+  .sinopse {
+    height: 90vh;
+
+    &__text {
+      margin: 100px auto 0;
+      color: variables.$textColorSecondary;
+      max-width: 70%;
+      line-height: 1.8em;
+      font-size: 0.9em;
+      letter-spacing: 0.1em;
+    }
+
+    h3 {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .sinopse {
+    height: 90vh;
+
+    &__text {
+      margin: 100px auto 0;
+      color: variables.$textColorSecondary;
+      max-width: 70%;
+      line-height: 1.8em;
+      font-size: 0.9em;
+      letter-spacing: 0.1em;
+    }
+
+    h3 {
+      padding-bottom: 30px;
+    }
+  }
 }

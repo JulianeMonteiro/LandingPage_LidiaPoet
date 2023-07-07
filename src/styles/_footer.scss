@@ -6,6 +6,7 @@ footer {
   align-items: center;
   text-align: center;
   justify-content: center;
+
   p {
     color: variables.$textColorSecondary;
     font-family: "Special Elite", cursive;
@@ -16,5 +17,31 @@ footer {
   img {
     width: 18px;
     height: 18px;
+  }
+}
+
+@media only screen and (min-width: 428px) and (max-width: 600px) {
+  footer {
+    p {
+      font-size: 10px;
+    }
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  footer {
+    p {
+      font-size: 10px;
+    }
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
   }
 }

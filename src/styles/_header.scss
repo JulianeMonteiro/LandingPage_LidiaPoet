@@ -125,4 +125,47 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 428px) and (max-width: 600px) {
+  .header {
+    height: 7vh;
+
+    &__container {
+      padding: 0;
+      &__logo {
+        width: 40px;
+      }
+    }
+
+    &__links {
+      &__item {
+        padding: 10px;
+
+        a {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .header {
+    height: 7vh;
+
+    &__container {
+      padding: 0;
+      &__logo {
+        width: 40px;
+      }
+    }
+
+    &__links {
+      &__item {
+        padding: 10px;
+
+        a {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
 }
