@@ -6,9 +6,12 @@
   &__title {
     width: 70vw;
     margin: 0 auto;
-    color: variables.$textColorPrimary;
     font-size: 1.6em;
     letter-spacing: 0.1em;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    color: variables.$textColorSecondary;
+    border-top: variables.$colorBtn 3px solid;
   }
 
   .container {
@@ -29,11 +32,6 @@
     transition: border 1s;
     position: relative;
 
-    @media (max-width: 2000px) {
-      height: 200px;
-      width: 180px;
-    }
-
     &:hover {
       border: 1px solid variables.$textWhiteColor;
     }
@@ -52,35 +50,12 @@
     transition: opacity 1s;
   }
 
-  h2 {
-    @media (max-width: 2000px) {
-      font-size: 1.2em;
-      margin: 12px;
-    }
-  }
-
   p {
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 100px;
     padding: 5px 1px;
     background-color: transparent;
-
-    @media (max-width: 2000px) {
-      font-size: 1.1em;
-    }
-  }
-
-  h3 {
-    color: variables.$textColorSecondary;
-    padding-top: 40px;
-    padding-bottom: 100px;
-    border-top: variables.$colorBtn 3px solid;
-
-    @media (max-width: 1000px) {
-      padding-bottom: 60px;
-      font-size: 1.3em;
-    }
   }
 }
 .card {
@@ -96,28 +71,15 @@
   position: relative;
   margin-bottom: 50px;
   filter: grayscale(70%);
-
-  @media (max-width: 2000px) {
-    height: 220px;
-    width: 200px;
-  }
 }
 .card0 {
   background: url("/src/images/lidia_poet.png") center center no-repeat;
   background-size: 250px;
 
-  @media (max-width: 2000px) {
-    background-size: 200px;
-  }
-
   &:hover {
     background: url("/src/images/lidia_poet.png") left center no-repeat;
     background-size: 350px;
     filter: grayscale(0);
-
-    @media (max-width: 2000px) {
-      background-size: 300px;
-    }
 
     h2,
     p {
@@ -129,18 +91,10 @@
   background: url("/src/images/jacopo_barberis.png") center center no-repeat;
   background-size: 250px;
 
-  @media (max-width: 2000px) {
-    background-size: 200px;
-  }
-
   &:hover {
     background: url("/src/images/jacopo_barberis.png") left center no-repeat;
     background-size: 350px;
     filter: grayscale(0);
-
-    @media (max-width: 2000px) {
-      background-size: 300px;
-    }
 
     h2,
     p {
@@ -152,18 +106,10 @@
   background: url("/src/images/andrea_caracciolo.png") center center no-repeat;
   background-size: 250px;
 
-  @media (max-width: 2000px) {
-    background-size: 200px;
-  }
-
   &:hover {
     background: url("/src/images/andrea_caracciolo.png") left center no-repeat;
     background-size: 350px;
     filter: grayscale(0);
-
-    @media (max-width: 2000px) {
-      background-size: 300px;
-    }
 
     h2,
     p {
@@ -176,18 +122,10 @@
   background: url("/src/images/enrico_poet.png") center center no-repeat;
   background-size: 250px;
 
-  @media (max-width: 2000px) {
-    background-size: 200px;
-  }
-
   &:hover {
     background: url("/src/images/enrico_poet.png") left center no-repeat;
     background-size: 350px;
     filter: grayscale(0);
-
-    @media (max-width: 2000px) {
-      background-size: 300px;
-    }
 
     h2,
     p {
@@ -200,18 +138,10 @@
   background: url("/src/images/marianna_poet.png") center center no-repeat;
   background-size: 250px;
 
-  @media (max-width: 2000px) {
-    background-size: 200px;
-  }
-
   &:hover {
     background: url("/src/images/marianna_poet.png") left center no-repeat;
     background-size: 350px;
     filter: grayscale(0);
-
-    @media (max-width: 2000px) {
-      background-size: 300px;
-    }
 
     h2,
     p {
@@ -224,22 +154,198 @@
   background: url("/src/images/teresa_barberis.png") center center no-repeat;
   background-size: 250px;
 
-  @media (max-width: 2000px) {
-    background-size: 200px;
-  }
-
   &:hover {
     background: url("/src/images/teresa_barberis.png") left center no-repeat;
     background-size: 350px;
     filter: grayscale(0);
-
-    @media (max-width: 2000px) {
-      background-size: 300px;
-    }
 
     h2,
     p {
       opacity: 1;
     }
   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) and (max-width: 2000px) {
+  .characters {
+    .border {
+      height: 220px;
+      width: 200px;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .characters {
+    margin-bottom: 80px;
+
+    &__title {
+      font-size: 1.3em;
+    }
+
+    .border {
+      height: 185px;
+      width: 166px;
+
+      .text-min {
+        margin-top: 105px;
+      }
+    }
+
+    h2,
+    p {
+      margin: 15px;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-top: 85px;
+    }
+  }
+  .card {
+    height: 200px;
+    width: 180px;
+  }
+  .card0 {
+    background-size: 220px;
+
+    &:hover {
+      background-size: 280px;
+    }
+  }
+  .card1 {
+    background-size: 220px;
+
+    &:hover {
+      background-size: 280px;
+    }
+  }
+  .card2 {
+    background-size: 220px;
+
+    &:hover {
+      background-size: 280px;
+    }
+  }
+
+  .card3 {
+    background-size: 220px;
+
+    &:hover {
+      background-size: 280px;
+    }
+  }
+
+  .card4 {
+    background-size: 220px;
+
+    &:hover {
+      background-size: 280px;
+    }
+  }
+
+  .card5 {
+    background-size: 220px;
+
+    &:hover {
+      background-size: 280px;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .characters {
+    margin-bottom: 80px;
+
+    &__title {
+      font-size: 1.3em;
+    }
+
+    .border {
+      height: 165px;
+      width: 135px;
+
+      .text-min {
+        margin-top: 65px;
+      }
+    }
+
+    h2,
+    p {
+      margin: 15px;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-top: 60px;
+    }
+  }
+  .card {
+    height: 180px;
+    width: 150px;
+  }
+  .card0 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+  .card1 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+  .card2 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+
+  .card3 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+
+  .card4 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+
+  .card5 {
+    background-size: 200px;
+
+    &:hover {
+      background-size: 250px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 428px) and (max-width: 600px) {
 }
